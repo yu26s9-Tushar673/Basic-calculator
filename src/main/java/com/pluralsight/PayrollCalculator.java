@@ -21,11 +21,13 @@ public class PayrollCalculator
         System.out.print("Enter pay rate: ");
         return scanner.nextFloat();
     }
+
     public static float totalPay(float hours, float rate)
     {
         return hours * rate;
 
     }
+
     public static void output(String name, float total)
     {
         System.out.println("Hello " + name + ", your gross pay is: " + total);
@@ -49,6 +51,5 @@ public class PayrollCalculator
         grossPay = totalPay(hours, payRate);
 
         output(name, grossPay);
-
     }
 }
